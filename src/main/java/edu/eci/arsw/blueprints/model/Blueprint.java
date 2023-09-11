@@ -23,7 +23,8 @@ public class Blueprint {
          
     public Blueprint(String author, String name){
         this.name=name;
-        points=new ArrayList<>();
+        this.author=author;
+        points = new ArrayList<>();
     }
 
     public Blueprint() {
@@ -43,6 +44,10 @@ public class Blueprint {
     
     public void addPoint(Point p){
         this.points.add(p);
+    }
+
+    public void setPoint(List<Point> points){
+        this.points = points;
     }
 
     @Override
